@@ -42,13 +42,13 @@ users = set()
             "𝗨𝘀𝗲 𝗖𝗵𝗿𝗼𝗺𝗲 𝗙𝗼𝗿 𝗔𝗰𝗰𝗲𝘀𝘀 𝗠𝘆 𝗔𝗹𝗹 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀"
         ),
         parse_mode='Markdown'
-    )"""
+    )
     
 # Define the /users command handler
 async def users_count(update: Update, context: CallbackContext) -> None:
     logger.info("Received /users command")
     user_count = len(users)
-    await update.message.reply_text(f"Total users who have interacted with the bot: {user_count}")
+    await update.message.reply_text(f"Total users who have interacted with the bot: {user_count}")"""
 
 # Define the link handler
 async def handle_link(update: Update, context: CallbackContext) -> None:
