@@ -19,6 +19,7 @@ CHANNEL_ID = os.getenv('CHANNEL_ID')
 users = set()
 
 # Define the /start command handler
+/*
 async def start(update: Update, context: CallbackContext) -> None:
     logger.info("Received /start command")
     user = update.effective_user
@@ -43,7 +44,7 @@ async def start(update: Update, context: CallbackContext) -> None:
         ),
         parse_mode='Markdown'
     )
-
+*/
 # Define the /users command handler
 async def users_count(update: Update, context: CallbackContext) -> None:
     logger.info("Received /users command")
