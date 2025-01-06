@@ -19,8 +19,7 @@ CHANNEL_ID = os.getenv('CHANNEL_ID')
 users = set()
 
 # Define the /start command handler
-/*
-async def start(update: Update, context: CallbackContext) -> None:
+"""async def start(update: Update, context: CallbackContext) -> None:
     logger.info("Received /start command")
     user = update.effective_user
 
@@ -43,8 +42,8 @@ async def start(update: Update, context: CallbackContext) -> None:
             "𝗨𝘀𝗲 𝗖𝗵𝗿𝗼𝗺𝗲 𝗙𝗼𝗿 𝗔𝗰𝗰𝗲𝘀𝘀 𝗠𝘆 𝗔𝗹𝗹 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀"
         ),
         parse_mode='Markdown'
-    )
-*/
+    )"""
+    
 # Define the /users command handler
 async def users_count(update: Update, context: CallbackContext) -> None:
     logger.info("Received /users command")
